@@ -1,220 +1,603 @@
 {% extends 'web/base.html' %}
 {% load static %}
-
 {% block body %}
-<!--swiper-->
-<section class="section swiper-container swiper-slider swiper-slider-1"
-    data-swiper='{"autoplay":{"delay":4567},"effect":"fade"}'>
-    <div class="swiper-wrapper text-center">
-        <div class="swiper-slide context-dark" data-slide-bg="{% static 'bmf/images/slide1.jpg">
-            <div class="swiper-slide-caption section-sm">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="swiper_caption" data-caption-animate="fadeIn" data-caption-delay="100">
-                                <h2>A complete line of</h2><span>products is available</span>
-                                <p>Welcome to the number 1 company in the industry! Looking for some helpful
-                                    advice? Go no further; you&apos;ve come to the right place. We are
-                                    professional, experienced and dedicated to your satisfaction.</p><a
-                                    class="fa fa-angle-right" href="#"></a>
+
+<!-- Content -->
+<div class="page-content bg-white">
+    <!-- Slider -->
+    <div class="main-slider style-two default-banner" id="home">
+        <div class="tp-banner-container">
+            <div class="tp-banner">
+                <div id="rev_slider_1175_1_wrapper" class="rev_slider_wrapper fullscreen-container"
+                    data-alias="duotone192" data-source="gallery" style="background-color:transparent;padding:0px;">
+                    <!-- START REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
+                    <div id="rev_slider_1175_1" class="rev_slider fullscreenbanner" style="display:none;"
+                        data-version="5.3.0.2">
+                        <ul>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-3239" data-transition="fade" data-slotamount="default"
+                                data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                                data-easeout="default" data-masterspeed="default"
+                                data-thumb="{% static 'bmf/images/main-slider/slide20.jpg' %}" data-rotate="0"
+                                data-fstransition="fade" data-fsmasterspeed="300" data-fsslotamount="7"
+                                data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-param8="" data-param9="" data-param10="" data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="{% static 'bmf/images/main-slider/slide20.jpg' %}" alt=""
+                                    data-lazyload="{% static 'bmf/images/main-slider/slide20.jpg"
+                                    data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                                    data-bgparallax="3" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+                                <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                    data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
+                                    data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+                                    data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)">
+                                </div>
+                                <!-- BACKGROUND VIDEO LAYER -->
+                                <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute"
+                                    data-videowidth="100%" data-videoheight="100%" data-videomp4="video/video.mp4"
+                                    data-videopreload="auto" data-videoloop="none" data-aspectratio="16:9"
+                                    data-autoplay="true" data-autoplayonlyfirsttime="false" data-forceCover="1"
+                                    data-nextslideatend="true"></div>
+                                <!-- LAYER NR. 1 -->
+                                <div class="tp-caption   rs-parallaxlevel-4" id="slide-3239-layer-1"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                    data-fontsize="['60','60','40','20']" data-lineheight="['75','70','50','30']"
+                                    data-width="['720','640','480','300']" data-height="none" data-whitespace="normal"
+                                    data-type="text" data-responsive_offset="off" data-responsive="off"
+                                    data-frames='[{"from":"y:20px;sX:0.9;sY:0.9;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                    data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">
+                                    Economy Needs A <br /> Healthy Steel Industry
+                                </div>
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-3240" data-transition="fade" data-slotamount="default"
+                                data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                                data-easeout="default" data-masterspeed="default"
+                                data-thumb="{% static 'bmf/images/main-slider/slide21.jpg" data-rotate="0"
+                                data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-param8="" data-param9="" data-param10="" data-description="">
+                                <!-- MAIN IMAGE -->
+                                <img src="{% static 'bmf/images/main-slider/slide21.jpg' %}" alt=""
+                                    data-lazyload="{% static 'bmf/images/main-slider/slide21.jpg"
+                                    data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                                    data-bgparallax="3" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+                                <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                    data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
+                                    data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+                                    data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.1);border-color:rgba(0, 0, 0, 0);border-width:0px; background-image:url(images/overlay/rrdiagonal-line.png)">
+                                </div>
+                                <!-- LAYER NR. 4 -->
+                                <div class="tp-caption   rs-parallaxlevel-4" id="slide-3239-layer-2"
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                    data-fontsize="['60','60','40','20']" data-lineheight="['75','70','50','30']"
+                                    data-width="['720','640','480','300']" data-height="none" data-whitespace="normal"
+                                    data-type="text" data-responsive_offset="off" data-responsive="off"
+                                    data-frames='[{"from":"y:20px;sX:0.9;sY:0.9;opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'
+                                    data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
+                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                    data-paddingleft="[0,0,0,0]"
+                                    style="z-index: 5; min-width: 720px; max-width: 720px; white-space: normal; font-size: 60px; line-height: 70px;  color: rgba(255, 255, 255, 1.00);font-family:Poppins;border-width:0px; font-weight:600;">
+                                    Economy Needs A <br /> Healthy Steel Industry
+                                </div>
+                            </li>
+                            <!-- SLIDE  -->
+                        </ul>
+                        <div class="tp-bannertimer" style="height: 8px; background-color: rgba(255, 255, 255, 0.25);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider END -->
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- Features -->
+        <div class="section-full content-inner bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.3s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic1.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Machine Welding</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.6s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic2.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Flanging & Advanced</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.9s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic3.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Metal Sheet Cutting</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.3s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic4.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Structural Steel</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.6s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic5.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Pipe & Pipeline</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
+                        data-wow-delay="0.9s">
+                        <div class="dlab-box service-box-2">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
+                                <a href="services-details.html"><img
+                                        src="{% static 'bmf/images/our-work/steelplant/pic6.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title"><a href="services-details.html">Structural Fabrication</a></h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide context-dark" data-slide-bg="{% static 'bmf/images/slide2.jpg' %}">
-            <div class="swiper-slide-caption section-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="swiper_caption caption-bg-2" data-caption-animate="fadeIn"
-                                data-caption-delay="100">
-                                <h2>Providing premium</h2><span>products of exceptional value</span>
-                                <p>We are committed to the highest quality, reliability, responsibility,
-                                    continuous improvement.</p><a class="fa fa-angle-right" href="#"></a>
+        <!-- Features End -->
+        <!-- Service Info Head -->
+        <div class="section-full content-inner-2 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s"
+            style="background-image:url(/static/bmf/images/background/map-bg.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center service-info">
+                        <h2 class="title text-white">Amazing things happen to your business when we connect those dots
+                            of utility and value.</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service Info Head End -->
+        <!-- About Us -->
+        <div class="section-full content-inner bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <div class="our-story">
+                            <span>OUR STORY</span>
+                            <h2 class="title">Commited to High <br /> Quality <span class="text-primary"> Service
+                                </span></h2>
+                            <h4 class="title">Amazing things happen to your business when we connect those dots of
+                                utility and value.</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem Ipsum has
+                                been the Factory's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is
+                                simply dummy text of the printing and typesetting Factory.</p>
+                            <a href="about-2.html" class="site-button btnhover14">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                        <img src="{% static 'bmf/images/about/pic6.jpg' %}" class="radius-sm" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us End -->
+        <!-- Call To Action -->
+        <div class="section-full call-action style1 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 text-white">
+                        <h2 class="title">Amazing things happen to your business </h2>
+                    </div>
+                    <div class="col-lg-3 d-flex">
+                        <a href="contact-1.html" class="site-button black align-self-center ml-auto btnhover14">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+        <div class="section-full content-inner-2 bg-gray wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Our Project</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div
+                            class="img-carousel-dots-nav owl-theme owl-dots-none owl-carousel owl-btn-center-lr owl-btn-3">
+                            <div class="item">
+                                <div class="dlab-box project-bx">
+                                    <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                        <a href="portfolio-details.html"><img
+                                                src="{% static 'bmf/images/our-work/steelplant/pic10.jpg' %}"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="dlab-info">
+                                        <h5 class="dlab-title"><a href="portfolio-details.html">Manufacturing</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="dlab-box project-bx">
+                                    <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                        <a href="portfolio-details.html"><img
+                                                src="{% static 'bmf/images/our-work/steelplant/pic9.jpg' %}" alt=""></a>
+                                    </div>
+                                    <div class="dlab-info">
+                                        <h5 class="dlab-title"><a href="portfolio-details.html">Iron Making</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="dlab-box project-bx">
+                                    <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                        <a href="portfolio-details.html"><img
+                                                src="{% static 'bmf/images/our-work/steelplant/pic8.jpg' %}" alt=""></a>
+                                    </div>
+                                    <div class="dlab-info">
+                                        <h5 class="dlab-title"><a href="portfolio-details.html">Steel Pipes</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="dlab-box project-bx">
+                                    <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect zoom">
+                                        <a href="portfolio-details.html"><img
+                                                src="{% static 'bmf/images/our-work/steelplant/pic7.jpg' %}" alt=""></a>
+                                    </div>
+                                    <div class="dlab-info">
+                                        <h5 class="dlab-title"><a href="portfolio-details.html">Structural Steel</a>
+                                        </h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-slide context-dark" data-slide-bg="{% static 'bmf/images/slide3.jpg' %}">
-            <div class="swiper-slide-caption section-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="swiper_caption caption-bg-3" data-caption-animate="fadeIn"
-                                data-caption-delay="100">
-                                <h2>A wide range of</h2><span>high quality structural steel projects</span>
-                                <p>Our company can boast the reputation of the trusted partner known worldwide.
-                                </p><a class="fa fa-angle-right" href="#"></a>
+        <!-- Our Project END -->
+        <!-- Our Project -->
+        <div class="section-full bg-white content-inner">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Our team</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
+                </div>
+                <div class="row dlab-team10-area">
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <div class="dlab-box m-b30 dlab-team10">
+                            <div class="dlab-media">
+                                <a href="team-1.html">
+                                    <img alt="" src="{% static 'bmf/images/our-team/pic1.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="dlab-title"><a href="team-1.html">Nashid Martines</a></h4>
+                                <span class="dlab-position">Director</span>
+                                <ul class="dlab-social-icon">
+                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <div class="dlab-box m-b30 dlab-team10">
+                            <div class="dlab-media">
+                                <a href="team-1.html">
+                                    <img alt="" src="{% static 'bmf/images/our-team/pic2.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="dlab-title"><a href="team-1.html">Konne Backfield</a></h4>
+                                <span class="dlab-position">Designer</span>
+                                <ul class="dlab-social-icon">
+                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                        <div class="dlab-box m-b30 dlab-team10">
+                            <div class="dlab-media">
+                                <a href="team-1.html">
+                                    <img alt="" src="{% static 'bmf/images/our-team/pic3.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="dlab-title"><a href="team-1.html">Hackson Willingham</a></h4>
+                                <span class="dlab-position">Developer</span>
+                                <ul class="dlab-social-icon">
+                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+                        <div class="dlab-box m-b30 dlab-team10">
+                            <div class="dlab-media">
+                                <a href="team-1.html">
+                                    <img alt="" src="{% static 'bmf/images/our-team/pic4.jpg' %}">
+                                </a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="dlab-title"><a href="team-1.html">Konne Backfield</a></h4>
+                                <span class="dlab-position">Manager</span>
+                                <ul class="dlab-social-icon">
+                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
+                                    </li>
+                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--Swiper Pagination-->
-    <div class="swiper-pagination"></div>
-</section>
-<!--Services-->
-<section class="section section-md bg-default">
-    <div class="container">
-        <div class="row row-30">
-            <div class="col-lg-6 wow fadeInLeft">
-                <div class="img-box"><span></span><img src="{% static 'bmf/images/page-1_img01.jpg' %}" alt="">
-                    <div class="caption context-dark">
-                        <h2>DUCTING</h2>
-                        <p>Our custom fabricated stainless steel ducting products are highly reliable and
-                            distributed across the world.</p>
-                    </div><a class="fa fa-angle-right" href="#"></a>
+        <!-- Our Team -->
+        <!-- Testimonials -->
+        <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Happy Customers Said</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
                 </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight">
-                <div class="img-box"><span></span><img src="{% static 'bmf/images/page-1_img02.jpg' %}" alt="">
-                    <div class="caption context-dark">
-                        <h2>STACKS</h2>
-                        <p>Our stacks are designed to maintain air quality emissions in compliance with modern
-                            requirements for your facility.</p>
-                    </div><a class="fa fa-angle-right" href="#"></a>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInLeft">
-                <div class="img-box"><span></span><img src="{% static 'bmf/images/page-1_img03.jpg' %}" alt="">
-                    <div class="caption context-dark">
-                        <h2>tanks</h2>
-                        <p>We specialize in the fabrication of custom industrial tanks of all kinds, including
-                            stainless steel tanks.</p>
-                    </div><a class="fa fa-angle-right" href="#"></a>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight">
-                <div class="img-box"><span></span><img src="{% static 'bmf/images/page-1_img04.jpg' %}" alt="">
-                    <div class="caption context-dark">
-                        <h2>STRUCTURAL</h2>
-                        <p>Our primary business is providing design, fabrication, and erection of structural
-                            steel for commercial or industrial buildings, and bridges.</p>
-                    </div><a class="fa fa-angle-right" href="#"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--We'll handle any-->
-<section class="section section-md bg-default">
-    <div class="container wow fadeInRight">
-        <h2 class="text-color1"> We'll handle any<br><span class="font-weight-light">intricate custom
-                design</span></h2>
-        <div class="row">
-            <div class="col-lg-6">
-                <p>Steel and Fabrication Industry takes great pride in our industry-leading custom metal
-                    fabrication services. This is the core of our business and it’s a process we take seriously.
-                    We work on small, large, and heavy components. Our team of experts provides over a dozen
-                    metal fabrication services. We work with a large variety of metals and raw material forms.
-                    Our loyal customers come to us from a diverse array of industries. Their applications and
-                    products are numerous, which include sheet metal, complex assemblies, music equipment, fuel
-                    tanks, fixtures, and much more.</p>
-            </div>
-            <div class="col-lg-6">
-                <p>Steel and Fabrication Industry offers the most cost-effective, high-quality engineering and
-                    design services around. With our consulting, designing, prototyping, and other expert
-                    services, we consistently save customers time and money. We also offer a host of additional
-                    services, all under the initiative of environmentally-friendly, superior-quality work.</p><a
-                    class="btn" href="#">read more</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Bg Vide-->
-<section class="section bg-vide" data-vide-bg="mp4: video/video, poster: images/parallax1"
-    data-vide-options="posterType: jpg, loop: false, muted: false">
-    <div class="container section-sm">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="caption1">
-                    <h2>We serve<br>to meet</h2><span>your fabrication needs</span>
-                    <p>Our team is committed to providing service suited to each customer's ideal turnaround
-                        time. Our rush services can be performed in a matter of hours.</p><a class="fa fa-angle-right"
-                        href="#"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--OUR PRODUCTS-->
-<section class="section-md bg-default wow fadeInLeft">
-    <div class="container">
-        <h2 class="title1">Our<span class="font-weight-light"> products</span></h2>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <ul class="marked-list">
-                    <li><a href="#">Structural Steel Buildings</a></li>
-                    <li><a href="#">Platforms, Stairways</a></li>
-                    <li><a href="#">Motor & Fan Bases</a></li>
-                    <li><a href="#">Tanks</a></li>
-                    <li><a href="#">Pressure Vessels</a></li>
-                    <li><a href="#">Cyclones</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <ul class="marked-list">
-                    <li><a href="#">Scrubbers</a></li>
-                    <li><a href="#">Fan Housings</a></li>
-                    <li><a href="#">Industrial Ductwork & Piping</a></li>
-                    <li><a href="#">Hoppers</a></li>
-                    <li><a href="#">Stacks</a></li>
-                    <li><a href="#">Dampers</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <ul class="marked-list">
-                    <li><a href="#">Slide Gates</a></li>
-                    <li><a href="#">Filter Housings</a></li>
-                    <li><a href="#">Conveyors</a></li>
-                    <li><a href="#">Guards</a></li>
-                    <li><a href="#">Dewatering Screen Cabinets</a></li>
-                    <li><a href="#">Sump Tanks</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Parallax-->
-<section class="section parallax-container" data-parallax-img="{% static 'bmf/images/parallax2.jpg' %}">
-    <div class="parallax-content section-sm context-dark text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="caption1 caption2">
-                        <h2>We meet<br>a wide<span>range of fabrication requirements</span></h2>
-                        <p>Our industrial coating services, suited to meet the needs of numerous industries.</p>
-                        <a class="fa fa-angle-right" href="#"></a>
+                <div class="testimonial-six owl-loaded owl-theme owl-carousel owl-none dots-style-2">
+                    <div class="item">
+                        <div class="testimonial-8">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the when an printer
+                                    took a galley of type and scrambled it to make.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <div class="testimonial-pic radius shadow"><img
+                                        src="{% static 'bmf/images/testimonials/pic1.jpg' %}" width="100" height="100"
+                                        alt=""></div>
+                                <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-8">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the when an printer
+                                    took a galley of type and scrambled it to make.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <div class="testimonial-pic radius shadow"><img
+                                        src="{% static 'bmf/images/testimonials/pic2.jpg' %}" width="100" height="100"
+                                        alt=""></div>
+                                <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimonial-8">
+                            <div class="testimonial-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the when an printer
+                                    took a galley of type and scrambled it to make.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <div class="testimonial-pic radius shadow"><img
+                                        src="{% static 'bmf/images/testimonials/pic3.jpg' %}" width="100" height="100"
+                                        alt=""></div>
+                                <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
+                                    class="testimonial-position">Student</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--OFFERING-->
-<section class="section-md bg-default wow fadeInRight">
-    <div class="container">
-        <h2 class="text-color1">Offering the best level<br><span class="font-weight-light">of excellence in
-                steel fabrication</span></h2>
-        <div class="row row-30">
-            <div class="col-md-6"><img class="offs" src="{% static 'bmf/images/page-1_img05.jpg' %}" alt=""></div>
-            <div class="col-md-6">
-                <p>Steel and Fabrication Industry was incorporated in April of 1989 with the objective of
-                    offering the market a higher level of excellence in steel fabrication. Its organizers, with
-                    a combined sixty years of experience in steel fabrication, machining, manufacturing, and
-                    design could see that many large manufacturers were scaling back their own company’s to
-                    reduce costs. To achieve their objectives Steel and Fabrication Industry assembled a team of
-                    experienced and certified craftsmen, engineers, and designers with a commitment to quality
-                    and efficiency.</p><a class="btn offs1" href="#">read more</a>
+        <!-- Testimonials END -->
+        <!-- Latests News -->
+        <div class="section-full content-inner bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Industry News</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
+                </div>
+                <div class="blog-carousel owl-carousel owl-btn-3 owl-btn-center-lr">
+                    <div class="item">
+                        <div class="blog-post blog-grid blog-rounded blog-effect1">
+                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
+                                        src="{% static 'bmf/images/blog/grid/pic1.jpg' %}" alt=""></a> </div>
+                            <div class="dlab-info p-a20 border-1">
+                                <div class="dlab-post-meta">
+                                    <ul>
+                                        <li class="post-date"> <strong>10 Aug</strong> <span> 2016</span> </li>
+                                        <li class="post-author"> By <a href="javascript:void(0);">Jack</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="dlab-post-title">
+                                    <h4 class="post-title"><a href="blog-single.html">Seven Doubts You Should</a></h4>
+                                </div>
+                                <div class="dlab-post-text">
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                                        as necessary, making this the first true.</p>
+                                </div>
+                                <div class="dlab-post-readmore">
+                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
+                                        class="site-button btnhover14">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post blog-grid blog-rounded blog-effect1">
+                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
+                                        src="{% static 'bmf/images/blog/grid/pic2.jpg' %}" alt=""></a> </div>
+                            <div class="dlab-info p-a20 border-1">
+                                <div class="dlab-post-meta ">
+                                    <ul>
+                                        <li class="post-date"> <strong>11 Aug</strong> <span> 2016</span> </li>
+                                        <li class="post-author"> By <a href="javascript:void(0);">Zachary</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="dlab-post-title">
+                                    <h4 class="post-title"><a href="blog-single.html">The Shocking Revelation</a></h4>
+                                </div>
+                                <div class="dlab-post-text">
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                                        as necessary, making this the first true.</p>
+                                </div>
+                                <div class="dlab-post-readmore">
+                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
+                                        class="site-button btnhover14">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blog-post blog-grid blog-rounded blog-effect1">
+                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
+                                        src="{% static 'bmf/images/blog/grid/pic3.jpg' %}" alt=""></a> </div>
+                            <div class="dlab-info p-a20 border-1">
+                                <div class="dlab-post-meta">
+                                    <ul>
+                                        <li class="post-date"> <strong>12 Aug</strong> <span> 2016</span> </li>
+                                        <li class="post-author"> By <a href="javascript:void(0);">Charlotte</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="dlab-post-title">
+                                    <h4 class="post-title"><a href="blog-single.html">The Story Of Industry</a></h4>
+                                </div>
+                                <div class="dlab-post-text">
+                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                                        as necessary, making this the first true.</p>
+                                </div>
+                                <div class="dlab-post-readmore">
+                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
+                                        class="site-button btnhover14">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Latest News End -->
+        <!-- Call To Action -->
+        <div class="section-full call-action bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.9s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 text-white">
+                        <h2 class="title">Amazing things happen to your business </h2>
+                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="col-lg-3 d-flex">
+                        <a href="contact-2.html"
+                            class="site-button white align-self-center outline ml-auto outline-2 btnhover14">Get In
+                            Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
     </div>
-</section>
+    <!-- contact area END -->
+</div>
+<!-- Content END -->
 
 {% endblock %}

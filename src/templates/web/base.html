@@ -13,44 +13,32 @@
     <!-- Stylesheets -->
     {% block stylesheets %}
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css"
-        href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,500,600,700,900">
-    <link rel="stylesheet" href="{% static 'bmf/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'bmf/css/fonts.css' %}">
-    <link rel="stylesheet" href="{% static 'bmf/css/style.css' %}">
+    <link rel="icon" href="{% static 'bmf/images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'bmf/images/favicon.png' %}" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/plugins.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/line-awesome/css/line-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/flaticon/flaticon.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/themify/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/style.min.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'bmf/css/skin/skin-2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/templete.min.css' %}">
+    <!-- Google Font -->
     <style>
-        .ie-panel {
-            display: none;
-            background: #212121;
-            padding: 10px 0;
-            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
-            clear: both;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        html.ie-10 .ie-panel,
-        html.lt-ie-10 .ie-panel {
-            display: block;
-        }
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap');
     </style>
+
+    <!-- REVOLUTION SLIDER CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'bmf/plugins/revolution/revolution/css/revolution.min.css' %}">
     {% endblock stylesheets %}
 
 </head>
 
-<body>
-
-    <div class="preloader">
-        <div class="preloader-body">
-            <div class="cssload-container">
-                <div class="cssload-speeding-wheel"></div>
-            </div>
-            <p>Loading...</p>
-        </div>
-    </div>
-    <div class="page">
+<body id="bg">
+    <div class="page-wraper">
+        <div id="loading-area"></div>
 
         <!-- Main Header-->
         {% include 'web/header.html' %}
@@ -63,13 +51,25 @@
 
         <!-- Main Footer -->
         {% include 'web/footer.html' %}
+        <button class="scroltop style1 radius white" type="button"><i class="fa fa-arrow-up"></i></button>
+
 
         {% block script %}
         <!-- javascript libraries / javascript files set #1 -->
     </div>
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="{% static 'bmf/js/core.min.js' %}"></script>
-    <script src="{% static 'bmf/js/script.js' %}"></script>
+    <script src="{% static 'bmf/js/combining.js' %}"></script><!-- CONTACT JS  -->
+    <script src="{% static 'bmf/js/jquery.lazy.min.js' %}"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'bmf/js/rev.slider.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            'use strict';
+            dz_rev_slider_5();
+            $('.lazy').Lazy();
+        });	/*ready*/
+    </script>
     {% include 'web/messages.html' %}
 
     {% endblock script %}
