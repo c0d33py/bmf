@@ -1,0 +1,16 @@
+{% if messages %}
+    {% for message in messages %}
+    <script>
+        toastr.options = {
+            "debug": false,
+            "newestOnTop": false,
+            "positionClass": "toast-bottom-right",
+            "toastClass": "animated fadeInDown",
+            "hideDuration": "3000",
+            "timeOut": "3000",
+            "extendedTimeOut": "3000",
+        };
+        toastr.{{ message.tags }} ('{{ message }}');
+    </script>
+    {% endfor %}
+    {% endif %}

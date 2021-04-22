@@ -1,0 +1,13 @@
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+env
+staticfiles
+django-summernote
+media/services/*
+sudo chown -R :www-data media/
+sudo chmod 755 -R media/
+sudo systemctl restart apache2
+

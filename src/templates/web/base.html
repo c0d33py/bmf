@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% load static %}
+    {% load metatags %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- <meta name="google-site-verification" content="duExDPFOcK4oCyTsbXUzw2uAY2Iuf0xOCxJzbQok8b8" /> -->
+    {% include_metatags object %}
+
+    <!-- Stylesheets -->
+    {% block stylesheets %}
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CRaleway:400,500,600,700,900">
+    <link rel="stylesheet" href="{% static 'bmf/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bmf/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'bmf/css/style.css' %}">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+    {% endblock stylesheets %}
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    <div class="page">
+
+        <!-- Main Header-->
+        {% include 'web/header.html' %}
+
+        <!-- End Main Header -->
+
+        <!-- block for body -->
+        {% block body %}{% endblock %}
+
+
+        <!-- Main Footer -->
+        {% include 'web/footer.html' %}
+
+        {% block script %}
+        <!-- javascript libraries / javascript files set #1 -->
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="{% static 'bmf/js/core.min.js' %}"></script>
+    <script src="{% static 'bmf/js/script.js' %}"></script>
+    {% include 'web/messages.html' %}
+
+    {% endblock script %}
+    {% block extrascripts %}{% endblock extrascripts %}
+</body>
+
+</html>

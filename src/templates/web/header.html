@@ -1,0 +1,93 @@
+{% load static %}
+<!-- navigation panel -->
+<header class="section page-header">
+    <!--RD Navbar-->
+    <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="270px" data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="270px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-aside-outer rd-navbar-collapse">
+                <div class="rd-navbar-aside">
+                    <div class="rd-navbar-brand">
+                        <!-- Brand--><a class="brand" href="/"><img class="brand-logo-dark"
+                                src="{% static 'bmf/images/logo-default.png' %}" alt=""></a>
+                    </div>
+                    <ul class="text-right contact-list">
+                        <li>
+                            <h5>Need help? Contact us</h5>
+                        </li>
+                        <li>
+                            <div class="unit unit-spacing-xs align-items-center justify-content-end">
+                                <div class="unit-left"><span class="icon icon-lg text-middle fa-mobile-phone"></span>
+                                </div>
+                                <div class="unit-body">
+                                    <h3><a href="tel:#">800-2345-6789</a></h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="unit unit-spacing-xs align-items-center justify-content-end font-weight-medium">
+                                <div class="unit-left">
+                                    <p class="text-color2">Mon-Thu:<span class="text-gray-400">6am-4pm;</span>
+                                    </p>
+                                </div>
+                                <div class="unit-body">
+                                    <p class="text-color2">Fri:<span class="text-gray-400">6am-3pm;</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rd-navbar-main-outer">
+                <div class="rd-navbar-main">
+                    <!-- RD Navbar Panel-->
+                    <div class="rd-navbar-panel">
+                        <!-- RD Navbar Toggle-->
+                        <button class="rd-navbar-toggle"
+                            data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                        <!-- RD Navbar Brand-->
+                        <div class="rd-navbar-brand d-lg-none">
+                            <!-- Brand--><a class="brand" href="/"><img class="brand-logo-dark"
+                                    src="images/logo-default.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="rd-navbar-main-element">
+                        <div class="rd-navbar-nav-wrap">
+                            <ul class="rd-navbar-nav">
+                                <li class="rd-nav-item active"><a class="rd-nav-link" href="/">Home</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'about-page' %}">About
+                                        Us</a>
+                                    <ul class="rd-menu rd-navbar-dropdown">
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">What
+                                                We Do</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">What
+                                                We Offer</a>
+                                        </li>
+                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="#">Forum</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="{% url 'services-page' %}">Products
+                                        &amp; Services</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link" href="project-gallery.html">Project
+                                        Gallery</a>
+                                </li>
+                                <li class="rd-nav-item"><a class="rd-nav-link"
+                                        href="{% url 'contact-page' %}">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

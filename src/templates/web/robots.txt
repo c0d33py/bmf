@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow:
+
+
+sitemap: https://buraqalmadeenasecurity.com/sitemap.xml/

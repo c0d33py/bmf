@@ -1,0 +1,81 @@
+{% extends 'web/base.html' %}
+{% load static %}
+
+{% block body %}
+<!-- head section -->
+<section class="page-title parallax3 parallax-fix page-title-large">
+	<div class="opacity-medium bg-black"></div>
+	<img class="parallax-background-img" src="/static/web/images/detail-page1.jpg" alt="" />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center animated fadeInUp">
+				<div class="separator-line no-margin-top margin-four" style="background-color: red;"></div>
+				<!-- page title -->
+				<h1 class="white-text">Service Details</h1>
+				<!-- end page title -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end head section -->
+
+<!-- content section -->
+<section class="wow fadeIn">
+	<div class="container">
+		<div class="row">
+			<!-- sidebar  -->
+			<div class="col-md-3 col-sm-4 sidebar">
+				<!-- widget  -->
+				<div class="widget">
+					<h5 class="widget-title font-alt">New Services</h5>
+					<div class="thin-separator-line bg-dark-gray no-margin-lr"></div>
+					<div class="widget-body">
+						<ul class="widget-posts">
+							{% for object in services %}
+							<li class="clearfix">
+								<div class="widget-posts-details"><a
+										href="{% url 'service-detail-page' slug=object.slug %}">{{ object.title }}</a>
+									{{ object.created_at }}</div>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				<!-- end widget  -->
+				<!-- widget  -->
+				<div class="widget">
+					<h5 class="widget-title font-alt">Happy Client Say's</h5>
+					<div class="thin-separator-line bg-dark-gray no-margin-lr"></div>
+					<div class="widget-body clearfix">
+						<div class="testimonial-style2">
+							<p class="no-margin-top">We have used this company in one of our Business Event , We had
+								about 10 Security guards at the same time, All Guards
+								were in nice and clean uniform, very professional and helpful, We will definitely use
+								them for our next event. Excellent
+								Service!! I really recommend you guys to try them once. </p>
+							<span class="name black-text">Adario Strange</span>
+							<i class="fa fa-quote-left small-icon display-block margin-five no-margin-bottom"
+								style="color: red;"></i>
+						</div>
+					</div>
+				</div>
+				<!-- end widget  -->
+			</div>
+			<!-- end sidebar  -->
+			<!-- content  -->
+			<div class="col-md-8 col-sm-8 col-md-offset-1 xs-margin-top-seven">
+				<div class="clearfix">
+					<img src="/static/web/images/portfolio-img38.jpg" alt="" /><br><br>
+					<p class="text-large text-black">{{ object.title }}</p>
+					<div class="wide-separator-line no-margin-lr"></div>
+					<p class="text-med no-margin-bottom sm-margin-bottom-seven">{{ object.content | safe }}</p>
+				</div>
+
+			</div>
+			<!-- end content  -->
+		</div>
+	</div>
+</section>
+<!-- end content section -->
+
+{% endblock %}
