@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     {% load static %}
     {% load metatags %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- <meta name="google-site-verification" content="duExDPFOcK4oCyTsbXUzw2uAY2Iuf0xOCxJzbQok8b8" /> -->
     {% include_metatags object %}
 
+    <meta name="theme-color" content="#317EFB" />
     <!-- Stylesheets -->
     {% block stylesheets %}
     <!-- favicon -->
@@ -26,7 +27,7 @@
     <link class="skin" rel="stylesheet" type="text/css" href="{% static 'bmf/css/skin/skin-2.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/templete.min.css' %}">
     <!-- Google Font -->
-    <style>
+    <style rel="stylesheet">
         @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap');
     </style>
 

@@ -8,8 +8,9 @@
             <div class="container clearfix">
                 <!-- website logo -->
                 <div class="logo-header mostion logo-white">
-                    <a href="index.html"><img src="{% static 'bmf/images/Logo.png' %}" alt=""
-                            style="width: 40% !important"></a>
+                    <a href="index.html">
+                        <img src="{% static 'bmf/images/Logo.png' %}" width="auto" height="auto" alt=""
+                            style="width: 40% !important;"></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
@@ -22,7 +23,7 @@
                 <!-- main nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <a href="{% url 'home-page' %}"><img src="{% static 'bmf/images/Logo.png' %}" alt=""
+                        <a href="{% url 'home-page' %}"><img src="{% static 'bmf/images/Logo.png' %}" width="auto" height="auto" alt=""
                                 style="width: 40% !important"></a>
                     </div>
                     <ul class="nav navbar-nav">
@@ -32,7 +33,8 @@
                         <li class="{% active_link 'services-page' %}">
                             <a href="{% url 'services-page' %}">Service</a>
                         </li>
-                        <li><a href="https://buraqalmadeenasecurity.com/" target="_blank">Security Services</a></li>
+                        <li><a href="https://buraqalmadeenasecurity.com/" rel="noreferrer" target="_blank">Security
+                                Services</a></li>
                         <li class="{% active_link 'core-page' %}">
                             <a href="{% url 'core-page' %}">Mission</a>
                         </li>
