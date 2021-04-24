@@ -9,7 +9,7 @@ from .forms import ContactForm
 
 
 def HomePage(request):
-    queryset = Services.status_objects.all()
+    queryset = Services.status_objects.all()[:6]
     context = {
         'services': queryset,
     }
@@ -43,7 +43,7 @@ def ContactPage(request):
             find_us = form.cleaned_data['find_us']
             message = form.cleaned_data['message']
             # form.save()
-            comment = 'Name: ' + name + " \nFrom: " + email + "\n\n" + message + "\n\n\nDepartment: " + find_us + "\nTEL: " + phone
+            comment = 'Name: ' + name + " \nFrom: " + email + "\n\n" + message + "\n\n\nFind us?: " + find_us + "\nTEL: " + phone
             try:
                 send_mail(
                     name,  # subject
@@ -110,18 +110,6 @@ def CoreValues(request):
     return render(request, 'web/core_values.html')
 
 
-def VisionPage(request):
-    return render(request, 'web/vision.html')
-
-
-def BlogPage(request):
-    return render(request, 'web/blog.html')
-
-
-def BlogPostDetail(request):
-    return render(request, 'web/news-detail.html')
-
-
 # HTTP Error 400
-def page_not_found(request):
+def page_not_found(request, *args, **kwargs):
     return render(request, 'web/404.html', status=404)
