@@ -13,8 +13,11 @@
     <!-- Stylesheets -->
     {% block stylesheets %}
     <!-- favicon -->
-    <link rel="icon" href="{% static 'bmf/images/favicon.ico' %}" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'bmf/images/favicon.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/bmf/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/bmf/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/bmf/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/bmf/images/favicon/site.webmanifest">
+
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/plugins.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/fontawesome/css/font-awesome.min.css' %}">
@@ -50,15 +53,16 @@
 
         <!-- Main Footer -->
         {% include 'web/footer.html' %}
-        <button class="scroltop style1 radius white" type="button"><i class="fa fa-arrow-up"></i></button>
+        <button class="scroltop style1 radius white" type="button">
+            <i class="fa fa-arrow-up"></i>
+        </button>
 
 
         {% block script %}
         <!-- javascript libraries / javascript files set #1 -->
     </div>
     <script src="{% static 'bmf/js/combining.js' %}"></script>
-
-
+    <script src="{% static 'bmf/js/custom.js' %}"></script>
     <script src="{% static 'bmf/js/jquery.lazy.min.js' %}"></script>
     <!-- REVOLUTION JS FILES -->
     <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
@@ -73,7 +77,6 @@
         src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
     <script type="text/javascript"
         src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
-
     <script src="{% static 'bmf/js/rev.slider.js' %}"></script>
     <script>
         jQuery(document).ready(function () {
@@ -85,6 +88,7 @@
     {% include 'web/messages.html' %}
 
     {% endblock script %}
+
     {% block extrascripts %}{% endblock extrascripts %}
 </body>
 

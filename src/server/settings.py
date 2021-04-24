@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'widget_tweaks',
     'metatags',
+    'active_link',
 
     'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',
@@ -97,8 +98,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'core.views.AllPageRender',
-
             ],
         },
     },

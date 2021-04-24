@@ -4,9 +4,9 @@ from .models import Services, Contact
 from django.contrib import admin
 
 # Register your models here.
-admin.site.site_header = "BMS Admin"
-admin.site.site_title = "BMS Admin Portal"
-admin.site.index_title = "Welcome to BMS Admin Portal"
+admin.site.site_header = "BMF Admin"
+admin.site.site_title = "BMF Admin Portal"
+admin.site.index_title = "Welcome to BMF Admin Portal"
 
 admin.site.register(Contact)
 

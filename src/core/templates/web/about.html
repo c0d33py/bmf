@@ -2,150 +2,155 @@
 {% load static %}
 
 {% block body %}
-<section class="section section-md bg-default">
-    <div class="container">
-        <div class="row row-30">
-            <div class="col-lg-4 wow fadeInLeft">
-                <h3 class="big">about<span> us</span></h3>
-                <div class="history-box"><img alt="" src="images/page-2_img01.jpg">
-                    <h4>We have extensive steel construction</h4>
-                    <p>Our advanced, automated systems allow us to manufacture faster at a lower cost – and we
-                        pass the savings on to our customers. It enables us to improve capacity which provides
-                        superior turn around times.</p>
+
+<!-- Content -->
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle bg-pt"
+        style="background-image:url({% static 'bmf/images/banner/bnr3.jpg' %});">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry">
+                <h1 class="text-white">About us</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="/">Home</a></li>
+                        <li>About us</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <h3 class="big">our<span> history</span></h3>
-                <article class="history-box">
-                    <time datetime="2015">01-02-2015</time>
-                    <h4>Where we started</h4>
-                    <p>Nulla mollis nibh ac lectus bibendum, in aliquet tor mentum. Maecenas semper sagittis
-                        purus, in pharetra nibh aliquam eu. Pellentesque habitant .</p>
-                </article>
-                <article class="history-box">
-                    <time datetime="2017">02-03-2017</time>
-                    <h4>Step by step</h4>
-                    <p>Nulla mollis nibh ac lectus bibendum, in aliquet tort mentum. Maecenas semper sagittis
-                        purus, in pharetra nibh aliquam eu. Pellentesque habitant .</p>
-                </article>
-                <article class="history-box">
-                    <time datetime="2018">04-05-2018</time>
-                    <h4>Our development</h4>
-                    <p>Nulla mollis nibh ac lectus bibendum, in aliquet tort mentum. Maecenas semper sagittis
-                        purus, in pharetra nibh aliquam eu. Pellentesque habitant .</p>
-                </article>
-            </div>
-            <div class="col-lg-4 wow fadeInRight">
-                <h3 class="big">Why<span> us</span></h3>
-                <article class="history-box">
-                    <h4>automated systems</h4>
-                    <p>Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa accumsan,
-                        egestas eros sit amet egestas massa.</p>
-                </article>
-                <ul class="marked-list offs4">
-                    <li><a href="#">Headgear steelwork</a></li>
-                    <li><a href="#">Shaft steelwork</a></li>
-                    <li><a href="#">Headgear bins</a></li>
-                    <li><a href="#">Winder houses</a></li>
-                    <li><a href="#">Overland conveyers</a></li>
-                    <li><a href="#">Arrangement of chutes</a></li>
-                </ul>
+                <!-- Breadcrumb row END -->
             </div>
         </div>
     </div>
-</section>
-<section class="section parallax-container" data-parallax-img="images/parallax3.jpg">
-    <div class="parallax-content section-sm context-dark ">
-        <div class="container caption3 context-dark">
-            <h3 class="section-title text-center text-lg-left"><span>Work team</span></h3>
-            <div class="row row-30">
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team-box"><img alt="" src="images/page-2_img02.jpg">
-                        <h4>Mark Johnson</h4>
-                        <p>Morbi posuere diam auctor tellus dictum interdum. Donec faucib.</p>
+    <!-- inner page banner END -->
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- About Us -->
+        <div class="section-full content-inner bg-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 m-b30">
+                        <div class="our-story">
+                            <span>OUR STORY</span>
+                            <h2 class="title">Running a <br />successful business <br /><span class="text-primary">since
+                                    1955</span></h2>
+                            <h4 class="title">Industrial engineering is a branch of engineering which deals with the
+                                optimization.</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting Factory. Lorem Ipsum has
+                                been the Factory's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is
+                                simply dummy text of the printing and typesetting Factory.</p>
+                            <a href="javascript:void(0);" class="site-button">Read More</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team-box"><img alt="" src="images/page-2_img03.jpg">
-                        <h4>Patrick Pool</h4>
-                        <p>Morbi posuere diam auctor tellus dictum interdum. Donec faucib.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team-box"><img alt="" src="images/page-2_img04.jpg">
-                        <h4>Sam Kromstain</h4>
-                        <p>Morbi posuere diam auctor tellus dictum interdum. Donec faucib.</p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-3">
-                    <div class="team-box"><img alt="" src="images/page-2_img05.jpg">
-                        <h4>Alan Smith</h4>
-                        <p>Morbi posuere diam auctor tellus dictum interdum. Donec faucib.</p>
+                    <div class="col-lg-6 col-md-12 m-b30 our-story-thum">
+                        <img src="{% static 'bmf/images/about/pic6.jpg' %}" class="radius-sm" alt="">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="section-md bg-default">
-    <div class="container">
-        <div class="row row-30">
-            <div class="col-md-6 col-lg-4 wow fadeInLeft">
-                <h2 class="title-h2">useful<span class="font-weight-light"> info</span></h2>
-                <ul class="index-list">
-                    <li>
-                        <div class="index-list_cnt">
-                            <h4>our mission</h4>
-                            <p>Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et massa
-                                accumsan.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="index-list_cnt">
-                            <h4>Core Values</h4>
-                            <p>Egestas eros sit amet, egestas massa. Mauris hendrerit ipsum sed velit placerat,
-                                vitae imperdiet.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="index-list_cnt">
-                            <h4>Certifications</h4>
-                            <p>Egestas eros sit amet, egestas massa. Mauris hendrerit ipsum sed velit placerat,
-                                vitae imperdiet nisi.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2 class="title-h2">CAPABILITIES</h2>
-                <h4>Social Responsibility</h4>
-                <p class="offset-top-10">Donec diam quam, aliquet in commodo a, aliquam non dolor. Donec et
-                    massa accumsan, egestas eros sit amet, egestas massa.</p>
-                <ul class="marked-list offset-top-20">
-                    <li><a href="#">Structural Steel Fabrication</a></li>
-                    <li><a href="#">Value Added Services</a></li>
-                    <li><a href="#">Blasting & Painting</a></li>
-                    <li><a href="#">Engineering & Detailing</a></li>
-                    <li><a href="#">Structural Steel Erection</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInRight">
-                <h2 class="title-h2">clients<span class="font-weight-light"> say</span></h2>
-                <div class="quote-classic">
-                    <q>I wanted to say thank you for the amazing product and for the fast processing and
-                        delivery. It was impressive, you weren't kidding. I was surprised with such an excellent
-                        quality... My family is very happy.</q>
-                    <h4>Maria Brooks</h4>
+        <!-- About Us End -->
+        <!-- Abouts -->
+        <div class="section-full box-about-list">
+            <div class="row spno">
+                <div class="col-lg-6 col-md-12">
+                    <img src="{% static 'bmf/images/about/pic3.jpg' %}" alt="" class="img-cover" />
                 </div>
-                <div class="quote-classic">
-                    <q>Suspendisse efficitur hendrerit congue. Aliquam tempor neque arcu, lobortis pretium
-                        tempor sit amet nisl vitae, accumsan pharetra nisi. Proin finibus sem vitae elit
-                        dignissim placerat. Nunc ut finibus leo.</q>
-                    <h4>Steven Donovan</h4>
+                <div class="col-lg-6 col-md-12 bg-primary">
+                    <div class="max-w700 m-auto p-tb50 p-lr20">
+                        <div class="text-white">
+                            <h2>We're thriving and building <br />better products</h2>
+                        </div>
+                        <div class="icon-bx-wraper m-b30 left">
+                            <div class="icon-md">
+                                <a href="javascript:void(0);" class="icon-cell text-white">
+                                    <i class="flaticon-factory"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-tilte">Material Engineering</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod..</p>
+                            </div>
+                        </div>
+                        <div class="icon-bx-wraper m-b30 left">
+                            <div class="icon-md">
+                                <a href="javascript:void(0);" class="icon-cell text-white">
+                                    <i class="flaticon-settings"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-tilte">Chemical Research</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod..</p>
+                            </div>
+                        </div>
+                        <div class="icon-bx-wraper left">
+                            <div class="icon-md">
+                                <a href="javascript:void(0);" class="icon-cell text-white">
+                                    <i class="flaticon-worker"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-tilte">Petroleum Engineering</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod..</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Abouts END -->
+        <!-- About progress -->
+        <div class="section-full about-progress">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 bg-white">
+                        <div class="max-w700  m-auto content-inner">
+                            <div class="section-head">
+                                <h2 class="title">We provide the exceptional service we'd want to experience ourselves
+                                </h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer</p>
+                            </div>
+                            <div class="about-progress-box">
+                                <h6 class="text-primary">Web Development<span class="progress-num pull-right">85%</span>
+                                </h6>
+                                <div class="about-progress-bar bg-gray-dark">
+                                    <div class="about-progress bg-primary wow slideInLeft" data-wow-delay="0.2s"
+                                        data-wow-duration="2s" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="about-progress-box">
+                                <h6 class="text-primary">Web Designer<span class="progress-num pull-right">80%</span>
+                                </h6>
+                                <div class="about-progress-bar bg-gray-dark">
+                                    <div class="about-progress bg-primary wow slideInLeft" data-wow-delay="0.4s"
+                                        data-wow-duration="2s" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="about-progress-box">
+                                <h6 class="text-primary">Performance<span class="progress-num pull-right">75%</span>
+                                </h6>
+                                <div class="about-progress-bar bg-gray-dark">
+                                    <div class="about-progress bg-primary wow slideInLeft" data-wow-delay="0.6s"
+                                        data-wow-duration="2s" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 p-a0">
+                        <img src="{% static 'bmf/images/about/pic5.jpg' %}" alt="" class="img-cover " />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About progress END -->
     </div>
-</section>
+    <!-- contact area END -->
+</div>
+<!-- Content END-->
 
 {% endblock %}

@@ -111,9 +111,15 @@
         <!-- Features -->
         <div class="section-full content-inner bg-gray">
             <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">Services</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the
+                        industry's</p>
+                </div>
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
                         data-wow-delay="0.3s">
+
                         <div class="dlab-box service-box-2">
                             <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
                                 <a href="services-details.html"><img
@@ -231,7 +237,7 @@
                                 been the Factory's standard dummy text ever since the 1500s, when an unknown printer
                                 took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is
                                 simply dummy text of the printing and typesetting Factory.</p>
-                            <a href="about-2.html" class="site-button btnhover14">Read More</a>
+                            <a href="{% url 'about-page' %}" class="site-button btnhover14">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
@@ -249,7 +255,8 @@
                         <h2 class="title">Amazing things happen to your business </h2>
                     </div>
                     <div class="col-lg-3 d-flex">
-                        <a href="contact-1.html" class="site-button black align-self-center ml-auto btnhover14">Contact
+                        <a href="{% url 'contact-page' %}"
+                            class="site-button black align-self-center ml-auto btnhover14">Contact
                             Us</a>
                     </div>
                 </div>
@@ -319,111 +326,7 @@
             </div>
         </div>
         <!-- Our Project END -->
-        <!-- Our Project -->
-        <div class="section-full bg-white content-inner">
-            <div class="container">
-                <div class="section-head text-black text-center">
-                    <h2 class="title">Our team</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
-                </div>
-                <div class="row dlab-team10-area">
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <div class="dlab-box m-b30 dlab-team10">
-                            <div class="dlab-media">
-                                <a href="team-1.html">
-                                    <img alt="" src="{% static 'bmf/images/our-team/pic1.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="dlab-info">
-                                <h4 class="dlab-title"><a href="team-1.html">Nashid Martines</a></h4>
-                                <span class="dlab-position">Director</span>
-                                <ul class="dlab-social-icon">
-                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <div class="dlab-box m-b30 dlab-team10">
-                            <div class="dlab-media">
-                                <a href="team-1.html">
-                                    <img alt="" src="{% static 'bmf/images/our-team/pic2.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="dlab-info">
-                                <h4 class="dlab-title"><a href="team-1.html">Konne Backfield</a></h4>
-                                <span class="dlab-position">Designer</span>
-                                <ul class="dlab-social-icon">
-                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <div class="dlab-box m-b30 dlab-team10">
-                            <div class="dlab-media">
-                                <a href="team-1.html">
-                                    <img alt="" src="{% static 'bmf/images/our-team/pic3.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="dlab-info">
-                                <h4 class="dlab-title"><a href="team-1.html">Hackson Willingham</a></h4>
-                                <span class="dlab-position">Developer</span>
-                                <ul class="dlab-social-icon">
-                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
-                        <div class="dlab-box m-b30 dlab-team10">
-                            <div class="dlab-media">
-                                <a href="team-1.html">
-                                    <img alt="" src="{% static 'bmf/images/our-team/pic4.jpg' %}">
-                                </a>
-                            </div>
-                            <div class="dlab-info">
-                                <h4 class="dlab-title"><a href="team-1.html">Konne Backfield</a></h4>
-                                <span class="dlab-position">Manager</span>
-                                <ul class="dlab-social-icon">
-                                    <li><a class="site-button fa fa-facebook facebook" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-twitter twitter" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-linkedin linkedin" href="javascript:void(0);"></a>
-                                    </li>
-                                    <li><a class="site-button fa fa-pinterest pinterest" href="javascript:void(0);"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Our Team -->
+
         <!-- Testimonials -->
         <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
             <div class="container">
@@ -441,9 +344,6 @@
                                     took a galley of type and scrambled it to make.</p>
                             </div>
                             <div class="testimonial-detail clearfix">
-                                <div class="testimonial-pic radius shadow"><img
-                                        src="{% static 'bmf/images/testimonials/pic1.jpg' %}" width="100" height="100"
-                                        alt=""></div>
                                 <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
                                     class="testimonial-position">Student</span>
                             </div>
@@ -457,9 +357,6 @@
                                     took a galley of type and scrambled it to make.</p>
                             </div>
                             <div class="testimonial-detail clearfix">
-                                <div class="testimonial-pic radius shadow"><img
-                                        src="{% static 'bmf/images/testimonials/pic2.jpg' %}" width="100" height="100"
-                                        alt=""></div>
                                 <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
                                     class="testimonial-position">Student</span>
                             </div>
@@ -473,9 +370,6 @@
                                     took a galley of type and scrambled it to make.</p>
                             </div>
                             <div class="testimonial-detail clearfix">
-                                <div class="testimonial-pic radius shadow"><img
-                                        src="{% static 'bmf/images/testimonials/pic3.jpg' %}" width="100" height="100"
-                                        alt=""></div>
                                 <h5 class="testimonial-name m-t0 m-b5">David Matin</h5> <span
                                     class="testimonial-position">Student</span>
                             </div>
@@ -485,94 +379,7 @@
             </div>
         </div>
         <!-- Testimonials END -->
-        <!-- Latests News -->
-        <div class="section-full content-inner bg-white wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
-            <div class="container">
-                <div class="section-head text-black text-center">
-                    <h2 class="title">Industry News</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
-                        standard dummy text ever since the been when an unknown printer.</p>
-                </div>
-                <div class="blog-carousel owl-carousel owl-btn-3 owl-btn-center-lr">
-                    <div class="item">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
-                                        src="{% static 'bmf/images/blog/grid/pic1.jpg' %}" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta">
-                                    <ul>
-                                        <li class="post-date"> <strong>10 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Jack</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">Seven Doubts You Should</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                                        as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
-                                        class="site-button btnhover14">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
-                                        src="{% static 'bmf/images/blog/grid/pic2.jpg' %}" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta ">
-                                    <ul>
-                                        <li class="post-date"> <strong>11 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Zachary</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">The Shocking Revelation</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                                        as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
-                                        class="site-button btnhover14">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-post blog-grid blog-rounded blog-effect1">
-                            <div class="dlab-post-media dlab-img-effect rotate"> <a href="javascript:void(0);"><img
-                                        src="{% static 'bmf/images/blog/grid/pic3.jpg' %}" alt=""></a> </div>
-                            <div class="dlab-info p-a20 border-1">
-                                <div class="dlab-post-meta">
-                                    <ul>
-                                        <li class="post-date"> <strong>12 Aug</strong> <span> 2016</span> </li>
-                                        <li class="post-author"> By <a href="javascript:void(0);">Charlotte</a> </li>
-                                    </ul>
-                                </div>
-                                <div class="dlab-post-title">
-                                    <h4 class="post-title"><a href="blog-single.html">The Story Of Industry</a></h4>
-                                </div>
-                                <div class="dlab-post-text">
-                                    <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                                        as necessary, making this the first true.</p>
-                                </div>
-                                <div class="dlab-post-readmore">
-                                    <a href="blog-single.html" title="READ MORE" rel="bookmark"
-                                        class="site-button btnhover14">READ MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Latest News End -->
+
         <!-- Call To Action -->
         <div class="section-full call-action bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.9s">
             <div class="container">
@@ -582,7 +389,7 @@
                         <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="col-lg-3 d-flex">
-                        <a href="contact-2.html"
+                        <a href="{% url 'contact-page' %}"
                             class="site-button white align-self-center outline ml-auto outline-2 btnhover14">Get In
                             Touch</a>
                     </div>

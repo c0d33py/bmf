@@ -1,25 +1,17 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail, BadHeaderError
+from .models import Services, Category
 from django.http import HttpResponse
 from django.contrib import messages
 from django.conf import settings
 from .forms import ContactForm
-from .models import Services, Category
 # Create your views here.
 
 
-def AllPageRender(request):
-    services = Services.status_objects.all()[:4]
-    context = {
-        'services': services,
-    }
-    return context
-
-
 def HomePage(request):
-    services = Services.status_objects.all()
+    queryset = Services.status_objects.all()
     context = {
-        'services': services,
+        'services': queryset,
     }
     return render(request, 'web/index.html', context)
 
@@ -76,7 +68,36 @@ def ContactPage(request):
 def ServicesPage(request):
     services = Services.status_objects.all()
 
-    return render(request, 'web/services.html', {'services': services})
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            email = form.cleaned_data['email']
+            phone = form.cleaned_data['phone']
+            find_us = form.cleaned_data['find_us']
+            message = form.cleaned_data['message']
+            # form.save()
+            comment = 'Name: ' + name + " \nFrom: " + email + "\n\n" + message + "\n\n\nFind us?: " + find_us + "\nTEL: " + phone
+            try:
+                send_mail(
+                    name,  # subject
+                    comment,  # message
+                    email,  # from email
+                    [settings.EMAIL_HOST_USER],  # to email
+                    fail_silently=False
+                )
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            print('success')
+            messages.success(request, f"{name} your message successfully sent!")
+            return redirect("contact-page")
+    else:
+        form = ContactForm()
+    context = {
+        'form': form,
+        'services': services
+    }
+    return render(request, 'web/services.html', context)
 
 
 def ServicesPageDetail(request, slug):

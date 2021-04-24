@@ -8,42 +8,21 @@
                     <div class="widget border-0">
                         <h6 class="m-b20 text-white font-weight-300 text-uppercase">Quick Links</h6>
                         <ul class="list-2">
-                            <li><a href="about-1.html">About Us</a></li>
-                            <li><a href="blog-grid-2.html">Blog</a></li>
-                            <li><a href="services-1.html">Services</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <li><a href="portfolio-details.html">Projects </a></li>
-                            <li><a href="help-desk.html">Help Desk </a></li>
-                            <li><a href="shop.html">Shop</a></li>
-                            <li><a href="contact-1.html">Contact</a></li>
+                            <li><a href="{% url 'services-page' %}">Services</a></li>
+                            <li><a href="{% url 'core-page' %}">Mission </a></li>
+                            <li><a href="{% url 'about-page' %}">About Us</a></li>
+                            <li><a href="{% url 'contact-page' %}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 wow fadeIn" data-wow-delay="0.4s">
                     <div class="widget">
-                        <h6 class="text-white font-weight-300 text-uppercase">Newsletter</h6>
-                        <div class="subscribe-form m-b20 m-t15">
-                            <form class="dzSubscribe"
-                                action="https://industry.dexignzone.com/xhtml/script/mailchamp.php" method="post">
-                                <div class="dzSubscribeMsg"></div>
-                                <div class="input-group">
-                                    <input name="dzEmail" required="required" class="form-control radius-no"
-                                        placeholder="Your Email Id" type="email">
-                                    <span class="input-group-btn">
-                                        <button name="submit" value="Submit" type="submit"
-                                            class="site-button radius-no btnhover14">SEND</button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
+
                         <h6 class="m-b10 text-white font-weight-300 text-uppercase">Connect with us</h6>
                         <ul class="list-inline m-a0">
                             <li><a href="javascript:void(0);" class="site-button facebook sharp"><i
                                         class="fa fa-facebook"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button google-plus sharp"><i
-                                        class="fa fa-google-plus"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button linkedin sharp"><i
-                                        class="fa fa-linkedin"></i></a></li>
+
                             <li><a href="javascript:void(0);" class="site-button instagram sharp"><i
                                         class="fa fa-instagram"></i></a></li>
                             <li><a href="javascript:void(0);" class="site-button twitter sharp"><i
@@ -66,13 +45,12 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2021 <a href="https://dexignzone.com/"
-                            target="_blank">DexignZone</a>. all rights reserved.</span> </div>
+                <div class="col-md-6 col-sm-6 text-left "> <span>Copyright © 2021 <a href="/"
+                            target="_blank">Buraqalmadeenafacilitymanagement</a>. all rights reserved.</span> </div>
                 <div class="col-md-6 col-sm-6 text-right ">
                     <div class="widget-link ">
                         <ul>
-                            <li><a href="help-desk.html"> Help Desk</a></li>
-                            <li><a href="privacy-policy.html"> Refund Policy</a></li>
+                            <li><a href="/"> Refund Policy</a></li>
                         </ul>
                     </div>
                 </div>
