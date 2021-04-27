@@ -9,7 +9,7 @@ config.encoding = ('cp1251')
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
-
+# https://cef58d48b404.ngrok.io
 ALLOWED_HOSTS = []
 
 
