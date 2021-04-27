@@ -67,20 +67,21 @@
     <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
     <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js?version=5.4.8' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js?version=5.4.8' %}"></script>
     <script type="text/javascript"
         src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
     <script type="text/javascript"
         src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
     <script type="text/javascript"
         src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+
     <script src="{% static 'bmf/js/rev.slider.js' %}"></script>
     <script>
         jQuery(document).ready(function () {
             'use strict';
-            dz_rev_slider_5();
+            dz_rev_slider_12();
             $('.lazy').Lazy();
         });	/*ready*/
     </script>
