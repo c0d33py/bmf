@@ -1,12 +1,10 @@
-from os import name
-from django.contrib.auth.models import User
-from django.db import models
-from django.db.models.deletion import SET_NULL
 from django.db.models.fields import SlugField
+from django.contrib.auth.models import User
 from .manager import ServiceQuerySet
 from .fileupload import services_path
 from django.utils.text import slugify
 from django.urls import reverse
+from django.db import models
 from PIL import Image
 
 

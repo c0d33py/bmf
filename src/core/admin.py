@@ -8,7 +8,7 @@ admin.site.site_header = "BMF Admin"
 admin.site.site_title = "BMF Admin Portal"
 admin.site.index_title = "Welcome to BMF Admin Portal"
 
-admin.site.register(Contact)
+# admin.site.register(Contact)
 
 
 @admin.register(Services)

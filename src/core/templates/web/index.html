@@ -228,13 +228,17 @@
 
                         <div class="dlab-box service-box-2">
                             <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
-                                <a href="services-details.html"><img
-                                        src="{% static 'bmf/images/our-work/steelplant/pic1.jpg' %}" alt=""></a>
+                                <a href="{% url 'service-detail-page' slug=object.slug %}">
+                                    <img src="{{ object.image.url }}" alt=""></a>
                             </div>
                             <div class="dlab-info">
-                                <h4 class="title"><a href="services-details.html">Machine Welding</a></h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <a href="services-details.html" class="site-button btnhover14">Learn More</a>
+                                <h4 class="title">
+                                    <a href="{% url 'service-detail-page' slug=object.slug %}">
+                                        {{ object.title }}</a>
+                                </h4>
+                                <p>{{ object.timeline|truncatechars:110 }}</p>
+                                <a href="{% url 'service-detail-page' slug=object.slug %}"
+                                    class="site-button btnhover14">Learn More</a>
                             </div>
                         </div>
                     </div>
