@@ -1,0 +1,6 @@
+[client]
+host = localhost
+database = buraqal1_bmf
+user =  buraqal1_buraqalm
+password = Anon@ha4er
+default-character-set = utf8
