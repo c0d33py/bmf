@@ -13,7 +13,7 @@ class StaticViewSitemap(Sitemap):
             'services-page',
             'about-page',
             'contact-page',
-            'vision-page',
+            'core-page',
         ]
 
     def location(self, item):
