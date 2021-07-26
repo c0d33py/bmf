@@ -14,26 +14,26 @@
     <!-- Stylesheets -->
     {% block stylesheets %}
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/bmf/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/bmf/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/bmf/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/static/bmf/images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/blf/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/blf/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/blf/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/blf/images/favicon/site.webmanifest">
 
     <!-- STYLESHEETS -->
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/plugins.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/fontawesome/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/line-awesome/css/line-awesome.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/plugins/themify/themify-icons.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/style.min.css' %}">
-    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'bmf/css/skin/skin-2.min.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'bmf/css/templete.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/css/plugins.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/plugins/fontawesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/plugins/line-awesome/css/line-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/plugins/themify/themify-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/css/style.min.css' %}">
+    <link class="skin" rel="stylesheet" type="text/css" href="{% static 'blf/css/skin/skin-2.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'blf/css/templete.min.css' %}">
     <!-- Google Font -->
     <style rel="stylesheet">
         @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap');
     </style>
 
     <!-- REVOLUTION SLIDER CSS -->
-    <link rel="stylesheet" type="text/css" href="/static/bmf/plugins/revolution/revolution/css/revolution.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/blf/plugins/revolution/revolution/css/revolution.min.css">
     {% endblock stylesheets %}
 
 </head>
@@ -53,32 +53,30 @@
 
         <!-- Main Footer -->
         {% include 'web/footer.html' %}
-        <button class="scroltop style1 radius white" type="button">
-            <i class="fa fa-arrow-up"></i>
-        </button>
+        <button class="scroltop style1 icon-up" type="button"><i class="fa fa-arrow-up"></i></button>
 
 
         {% block script %}
         <!-- javascript libraries / javascript files set #1 -->
     </div>
-    <script src="{% static 'bmf/js/combining.js' %}"></script>
-    <script src="{% static 'bmf/js/custom.js' %}"></script>
-    <script src="{% static 'bmf/js/jquery.lazy.min.js' %}"></script>
+    <script src="{% static 'blf/js/combining.js' %}"></script>
+    <script src="{% static 'blf/js/custom.js' %}"></script>
+    <script src="{% static 'blf/js/jquery.lazy.min.js' %}"></script>
     <!-- REVOLUTION JS FILES -->
-    <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
-    <script src="{% static 'bmf/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'blf/plugins/revolution/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'blf/plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js?version=5.4.8' %}"></script>
+        src="{% static 'blf/plugins/revolution/revolution/js/extensions/revolution.extension.slideanims.min.js?version=5.4.8' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js?version=5.4.8' %}"></script>
+        src="{% static 'blf/plugins/revolution/revolution/js/extensions/revolution.extension.actions.min.js?version=5.4.8' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+        src="{% static 'blf/plugins/revolution/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+        src="{% static 'blf/plugins/revolution/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
     <script type="text/javascript"
-        src="{% static 'bmf/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+        src="{% static 'blf/plugins/revolution/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
 
-    <script src="{% static 'bmf/js/rev.slider.js' %}"></script>
+    <script src="{% static 'blf/js/rev.slider.js' %}"></script>
     <script>
         jQuery(document).ready(function () {
             'use strict';

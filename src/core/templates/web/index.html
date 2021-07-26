@@ -212,8 +212,24 @@
         </div><!-- END REVOLUTION SLIDER -->
     </div>
     <!-- Slider END -->
-    <!-- contact area -->
     <div class="content-block">
+        <!-- contact area -->
+        <div class="section-full call-action bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s"
+            style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeIn;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 text-white">
+                        <h2 class="title">Buraq Al Madeena Facility Management Services </h2>
+                        <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="col-lg-3 d-flex">
+                        <a href="{% url 'contact-page' %}"
+                            class="site-button btnhover15 white align-self-center outline ml-auto radius-xl outline-2">Contact
+                            Us </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Features -->
         <div class="section-full content-inner bg-gray">
             <div class="container">
@@ -248,110 +264,147 @@
         </div>
         <!-- Features End -->
         <!-- Service Info Head -->
-        <div class="section-full content-inner-2 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s"
-            style="background-image:url(/static/bmf/images/background/map-bg.png);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center service-info">
-                        <h2 class="title text-white">We believe in making building better places to be for
-                            those who work in and visit them.</h2>
-                        <p>No matter what specific service you need, our specialized professionals can perform it in a
-                            precise and efficient manner.</p>
+        <div class="section-full">
+            <div class="row m-lr0">
+                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow fadeInLeft"
+                    data-wow-duration="2s" data-wow-delay="0.3s"
+                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                    <div class="text-white align-self-center">
+                        <h2>Our Latest Service for Facility Management</h2>
+                        <p>Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper
+                            <span class="text-white">metus in erat viverra</span>, vehicula pharetra dolor accumsan. In
+                            arcu ex,
+                            rutrum finibus malesuada vel. Praesent pharetra orci odio, ut mattis tellus ullamcorper
+                            ornare.
+                            Suspendisse ullamcorper <span class="text-white">metus in erat viverra</span>, vehicula
+                            pharetra
+                            dolor accumsan. In arcu ex, rutrum finibus malesuada vel.
+                        </p>
+                        <a href="{% url 'contact-page' %}" class="site-button btnhover15 white">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s"
+                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                    <div class="row m-a0 lightgallery">
+                        <div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
+                            <div class="dlab-box overlay-gallery-bx1">
+                                <div class="dlab-thum dlab-img-overlay1 primary">
+                                    <a href="javascript:void(0);"> <img class="img-cover"
+                                            src="{% static 'blf/images/about/pic4.jpg' %}" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
+                            <div class="dlab-box overlay-gallery-bx1">
+                                <div class="dlab-thum dlab-img-overlay1 primary">
+                                    <a href="javascript:void(0);"> <img class="img-cover"
+                                            src="{% static 'blf/images/about/pic2.jpg' %}" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
+                            <div class="dlab-box overlay-gallery-bx1">
+                                <div class="dlab-thum dlab-img-overlay1 primary">
+                                    <a href="javascript:void(0);"> <img class="img-cover"
+                                            src="{% static 'blf/images/about/pic1.jpg' %}" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Service Info Head End -->
         <!-- About Us -->
-        <div class="section-full content-inner bg-white">
+        <div class="section-full content-inner const-about">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-                        <div class="our-story">
-                            <span>About our company</span>
-                            <h2 class="title">Commited to High <br /> Quality <span class="text-primary"> Services
-                                </span></h2>
-                            <h4 class="title">We believe in making building better places to be for
-                                those who work in and visit them.</h4>
-                            <p>We can take care of all your maintenance needs of your facility to make sure that
-                                everything
-                                is in its best shape and operating at its fullest potential.
-                                This is important because we make sure the places in which people work, play, learn and
-                                live are safe, comfortable, productive and sustainable.</p>
-                            <a href="{% url 'about-page' %}" class="site-button btnhover14">Read More</a>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 wow bounceInLeft" data-wow-duration="2s"
+                        data-wow-delay="0.3s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: bounceInLeft;">
+                        <div class="radius-sm m-b30">
+                            <img src="{% static 'blf/images/about/pic12.jpg' %}" alt="">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <img src="{% static 'bmf/images/about/pic6.jpg' %}" class="radius-sm" alt="">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-b15 wow bounceInRight" data-wow-duration="2s"
+                        data-wow-delay="0.3s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: bounceInRight;">
+                        <div class="content-bx1">
+                            <div class="about-year">
+                                <span>26</span>
+                                <p>Years<br>Experience<br>Working</p>
+                            </div>
+                            <div class="section-head style2">
+                                <h2 class="title">Great Lessons You Can Learn From Nuclear Plant</h2>
+                                <p>Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse
+                                    ullamcorper
+                                    metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus
+                                    malesuada vel. Praesent pharetra orci odio, ut mattis tellus</p>
+                            </div>
+                            <a href="portfolio-details.html" class="site-button btnhover15 m-r10 m-b10">View
+                                Portfolio</a>
+                            <a href="{% url 'about-page' %}" class="site-button btnhover15 black m-b10">About Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About Us End -->
-        <!-- Call To Action -->
-        <div class="section-full call-action style1 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+        <!-- call section-full -->
+        <div class="section-full content-inner-2 bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s"
+            style="background-image: url(&quot;/static/blf/images/background/map-bg.png&quot;); visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeIn;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-9 text-white">
-                        <h2 class="title">Buraq Al Madeena Facility Management Services </h2>
-                    </div>
-                    <div class="col-lg-3 d-flex">
-                        <a href="{% url 'contact-page' %}"
-                            class="site-button black align-self-center ml-auto btnhover14">Contact
-                            Us</a>
+                    <div class="col-lg-12 text-center call-action style2">
+                        <i class="fa fa-comment call-icon"></i>
+                        <h2 class="title text-white">1-800-505-5500</h2>
+                        <h3 class="text-white font-weight-600">Important Facts That You Should Know About</h3>
+                        <p class="m-b0">( All Call Are Toll Free )</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Call To Action End -->
-
+        <!-- call section-full end -->
         <!-- Testimonials -->
-        <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+        <div class="section-full bg-gray content-inner">
             <div class="container">
-                <div class="section-head text-black text-center">
-                    <h2 class="title">Happy Customers Said</h2>
-                    <p>we have been providing the best service to many of our customers.It is the experience that we
-                        have and the trust that we have built because of which our customers only select us. </p>
-                </div>
-                <div class="testimonial-six owl-loaded owl-theme owl-carousel owl-none dots-style-2">
-                    <div class="item">
-                        <div class="testimonial-8">
-                            <div class="testimonial-text">
-                                <p>The Facility is actually good. It does a decent job of portraying the scene as an
-                                    official. Honestly it was a decent
-                                    little place to work at out. didnt have any real issues with it at all except the
-                                    pay.</p>
-                            </div>
-                            <div class="testimonial-detail clearfix">
-                                <h5 class="testimonial-name m-t0 m-b5">Ahmad Wajih</h5> <span
-                                    class="testimonial-position">CAB Dealer</span>
-                            </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sort-title clearfix text-center">
+                            <h4>What peolpe are saying</h4>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-8">
-                            <div class="testimonial-text">
-                                <p>Great Company to work for. Owner is a very educated, personable, nice and caring man.
-                                    Everyone worked at a team. Wish I
-                                    still worked at this company. Very caring employees.
-                                    Thanks to all management.</p>
-                            </div>
-                            <div class="testimonial-detail clearfix">
-                                <h5 class="testimonial-name m-t0 m-b5">Asif Usmani</h5> <span
-                                    class="testimonial-position">Hotel Manager</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimonial-8">
-                            <div class="testimonial-text">
-                                <p>Chance to work on Facility Management. management and co-workers are supportive.
-                                    Hardest part is the movement to
-                                    different places at any time according to the project status and nature.</p>
-                            </div>
-                            <div class="testimonial-detail clearfix">
-                                <h5 class="testimonial-name m-t0 m-b5">Shehab Faheem</h5> <span
-                                    class="testimonial-position">Hotel Manager</span>
+                        <div class="section-content">
+                            <div class="testimonial-five owl-none owl-loaded owl-theme owl-carousel">
+                                <div class="item">
+                                    <div class="testimonial-6">
+                                        <div class="testimonial-text bg-white quote-left quote-right">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem
+                                                Ipsum has been the industry's standard dummy text ever since the when an
+                                                printer
+                                                took a galley of type and scrambled it to make [...]</p>
+                                        </div>
+                                        <div class="testimonial-detail clearfix bg-primary text-white">
+                                            <h4 class="testimonial-name m-tb0">David Matin</h4>
+                                            <span class="testimonial-position">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-6">
+                                        <div class="testimonial-text bg-white quote-left quote-right">
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem
+                                                Ipsum has been the industry's standard dummy text ever since the when an
+                                                printer
+                                                took a galley of type and scrambled it to make [...]</p>
+                                        </div>
+                                        <div class="testimonial-detail clearfix bg-primary text-white">
+                                            <h4 class="testimonial-name m-tb0">David Matin</h4>
+                                            <span class="testimonial-position">Student</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -360,24 +413,6 @@
         </div>
         <!-- Testimonials END -->
 
-        <!-- Call To Action -->
-        <div class="section-full call-action bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.9s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 text-white">
-                        <h2 class="title">We will get back to you ASAP</h2>
-                        <p class="m-b0">Please feel free to get in touch for help with your property repair and
-                            maintenance needs.</p>
-                    </div>
-                    <div class="col-lg-3 d-flex">
-                        <a href="{% url 'contact-page' %}"
-                            class="site-button white align-self-center outline ml-auto outline-2 btnhover14">Get In
-                            Touch</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Call To Action End -->
     </div>
     <!-- contact area END -->
 </div>
