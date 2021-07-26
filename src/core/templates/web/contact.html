@@ -26,54 +26,53 @@
 	<!-- contact area -->
 	<div class="section-full content-inner bg-white contact-style-1">
 		<div class="container">
-			<div class="row">
-				<!-- right part start -->
-				<div class="col-lg-4 col-md-6 d-flex m-b30">
-					<div class="p-a30 border contact-area border-1 align-self-stretch radius-sm">
-						<h3 class="m-b5">Quick Contact</h3>
-						<p>Contact us to learn more about our facility management services or set up an appointment
-							with our experts.</p>
-						<ul class="no-margin">
-							<li class="icon-bx-wraper left m-b30">
-								<div class="icon-bx-xs border-1"> <a href="javascript:void(0);" class="icon-cell"><i
-											class="ti-location-pin"></i></a> </div>
-								<div class="icon-content">
-									<h6 class="text-uppercase m-tb0 dlab-tilte">Address:</h6>
-									<p>Office no. 111 Sheikh Hamdan Building, AI Khubaisi Area Near Abu Bakar Metro
-										Station, DUBAI-U.A.E.</p>
-								</div>
-							</li>
-							<li class="icon-bx-wraper left  m-b30">
-								<div class="icon-bx-xs border-1"> <a href="javascript:void(0);" class="icon-cell"><i
-											class="ti-email"></i></a> </div>
-								<div class="icon-content">
-									<h6 class="text-uppercase m-tb0 dlab-tilte">Email:</h6>
-									<p>info@buraqalmadeenafacility<br>management.com</p>
-								</div>
-							</li>
-							<li class="icon-bx-wraper left">
-								<div class="icon-bx-xs border-1"> <a href="javascript:void(0);" class="icon-cell"><i
-											class="ti-mobile"></i></a> </div>
-								<div class="icon-content">
-									<h6 class="text-uppercase m-tb0 dlab-tilte">PHONE</h6>
-									<p>+97 04 5463344</p>
-								</div>
-							</li>
-						</ul>
-						<div class="m-t20">
-							<ul class="dlab-social-icon border dlab-social-icon-lg">
-								<li><a href="javascript:void(0);" class="fab fa-facebook bg-primary"></a></li>
-								<li><a href="javascript:void(0);" class="fab fa-twitter bg-primary"></a></li>
-								<li><a href="javascript:void(0);" class="fab fa-instagram bg-primary"></a></li>
-							</ul>
+			<div class="row dzseth">
+				<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+					<div class="icon-bx-wraper bx-style-1 p-lr20 p-tb30 center seth radius-sm">
+						<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i
+									class="ti-location-pin"></i></a> </div>
+						<div class="icon-content">
+							<h5 class="dlab-tilte text-uppercase">Address</h5>
+							<p>123 West Street, Melbourne Victoria 3000 Australia</p>
 						</div>
 					</div>
 				</div>
-				<!-- right part END -->
+				<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+					<div class="icon-bx-wraper bx-style-1 p-lr20 p-tb30 center seth radius-sm">
+						<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i
+									class="ti-email"></i></a> </div>
+						<div class="icon-content">
+							<h5 class="dlab-tilte text-uppercase">Email</h5>
+							<p>info@example.com <br /> info@example.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+					<div class="icon-bx-wraper bx-style-1 p-lr20 p-tb30 center seth radius-sm">
+						<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i
+									class="ti-mobile"></i></a> </div>
+						<div class="icon-content">
+							<h5 class="dlab-tilte text-uppercase">Phone</h5>
+							<p>+00 1234 5678 90 <br /> +00 234 678 9012</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 m-b30">
+					<div class="icon-bx-wraper bx-style-1 p-lr20 p-tb30 center seth radius-sm">
+						<div class="icon-lg text-primary m-b20"> <a href="javascript:void(0);" class="icon-cell"><i
+									class="ti-printer"></i></a> </div>
+						<div class="icon-content">
+							<h5 class="dlab-tilte text-uppercase">Fax</h5>
+							<p>+00 1234 5678 90 <br /> +00 234 678 9012</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 				<!-- Left part start -->
-				<div class="col-lg-4 col-md-6  mb-4 m-b30 mb-md-0">
+				<div class="col-lg-6 m-b30">
 					<div class="p-a30 bg-gray clearfix radius-sm">
-						<h3 class="m-b10">Send Message Us</h3>
+						<h3>Send Message Us</h3>
 						<div class="dzFormMsg"></div>
 						<form method="POST" class="dzForm" action=".">
 							{% csrf_token %}
@@ -127,13 +126,14 @@
 					</div>
 				</div>
 				<!-- Left part END -->
-				<div class="col-lg-4 d-flex m-b30">
+				<!-- right part start -->
+				<div class="col-lg-6 m-b30 d-flex">
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1561.4203537892479!2d55.33204700025788!3d25.271178037285292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc10fe29ccd%3A0x15938713a478b03c!2sAbu%20Baker%20Al%20Siddique!5e0!3m2!1sen!2s!4v1616249520388!5m2!1sen!2s"
-						class="align-self-stretch radius-sm" style="border:0; width:100%; min-height:100%;"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219"
+						class="align-self-stretch radius-sm" style="border:0; width:100%;  min-height:100%;"
 						allowfullscreen></iframe>
 				</div>
-
+				<!-- right part END -->
 			</div>
 		</div>
 	</div>
