@@ -5,221 +5,49 @@
 <!-- Content -->
 <div class="page-content bg-white">
     <!-- Slider -->
-    <div class="main-slider style-two default-banner" id="home">
-        <div id="rev_slider_1061_1_wrapper" class="rev_slider_wrapper fullscreen-container"
-            data-alias="creative-freedom" data-source="gallery" style="background-color:#1f1d24;padding:0px;">
-            <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
-            <div id="rev_slider_1061_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
-                <ul>
-                    <!-- SLIDE  -->
 
-                    <!-- MAIN IMAGE -->
-                    <li data-index="rs-3240" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-                        data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                        data-masterspeed="default" data-thumb="{% static 'bmf/images/main-slider/slide18.jpg' %}"
-                        data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                        data-param9="" data-param10="" data-description="">
+    {% include 'web/slider.html' %}
+    {% include 'web/header.html' %}
 
-                        <img src="{% static 'bmf/images/main-slider/slide18.jpg' %}" alt=""
-                            data-lazyload="{% static 'bmf/images/main-slider/slide18.jpg' %}"
-                            data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
-                            data-bgparallax="3" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-tobggroup"
-                            id="slide-100-layer-1" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['0','0','0','0']" data-fontweight="['100','100','400','400']"
-                            data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
-                            data-basealign="slide" data-responsive_offset="off" data-responsive="off"
-                            data-frames='[{"from":"opacity:0;","speed":1500,"to":"o:1;","delay":150,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 5; background-color:rgba(18, 12, 20, 0.5);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
-                            id="slide-100-layer-2" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['-150','-178','-120','-141']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6;border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Creative-Title tp-resizeme rs-parallaxlevel-1" id="slide-100-layer-4"
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['40','-10','60','40']"
-                            data-fontsize="['70','70','50','40']" data-lineheight="['70','70','55','45']"
-                            data-width="['none','none','none','320']" data-height="none" data-whitespace="nowrap"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":2550,"ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"to":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 8; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">
-                            Quality Care for all
-                        </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
-                            id="slide-100-layer-5" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['200','137','210','180']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2900,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 9; border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-200" data-transition="fadethroughdark" data-slotamount="default"
-                        data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                        data-masterspeed="2000" data-thumb="{% static 'bmf/images/main-slider/slide19.jpg' %}"
-                        data-rotate="0" data-saveperformance="off" data-title="Creative" data-param1="01" data-param2=""
-                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                        data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static 'bmf/images/main-slider/slide19.jpg' %}" alt=""
-                            data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg"
-                            data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-tobggroup"
-                            id="slide-200-layer-1" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['0','0','0','0']" data-fontweight="['100','100','400','400']"
-                            data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
-                            data-basealign="slide" data-responsive_offset="off" data-responsive="off"
-                            data-frames='[{"from":"opacity:0;","speed":1500,"to":"o:1;","delay":150,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 5; background-color:rgba(18, 12, 20, 0.5);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
-                            id="slide-200-layer-2" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['-150','-178','-120','-141']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6;border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Creative-Title tp-resizeme rs-parallaxlevel-1" id="slide-200-layer-4"
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['40','-10','60','40']"
-                            data-fontsize="['70','70','50','40']" data-lineheight="['70','70','55','45']"
-                            data-width="['none','none','none','320']" data-height="none" data-whitespace="nowrap"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":2550,"ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"to":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 8; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">
-                            We Help you to Succeed
-                        </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-3 bg-primary"
-                            id="slide-200-layer-5" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['200','137','210','180']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2900,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 9;border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-300" data-transition="fadethroughdark" data-slotamount="default"
-                        data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default"
-                        data-masterspeed="2000" data-thumb="{% static 'bmf/images/main-slider/slide20.jpg' %}"
-                        data-rotate="0" data-saveperformance="off" data-title="Creative" data-param1="01" data-param2=""
-                        data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                        data-param9="" data-param10="" data-description="">
-                        <!-- MAIN IMAGE -->
-                        <img src="{% static 'bmf/images/main-slider/slide20.jpg' %}" alt=""
-                            data-bgposition="center center" data-bgfit="cover" data-bgparallax="3" class="rev-slidebg"
-                            data-no-retina>
-                        <!-- LAYERS -->
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-tobggroup"
-                            id="slide-300-layer-1" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['0','0','0','0']" data-fontweight="['100','100','400','400']"
-                            data-width="full" data-height="full" data-whitespace="nowrap" data-type="shape"
-                            data-basealign="slide" data-responsive_offset="off" data-responsive="off"
-                            data-frames='[{"from":"opacity:0;","speed":1500,"to":"o:1;","delay":150,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power2.easeInOut"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 5; background-color:rgba(18, 12, 20, 0.5);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
-                            id="slide-300-layer-2" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['-150','-178','-120','-141']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6; border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Creative-Title tp-resizeme rs-parallaxlevel-1" id="slide-300-layer-4"
-                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['40','-10','60','40']"
-                            data-fontsize="['70','70','50','40']" data-lineheight="['70','70','55','45']"
-                            data-width="['none','none','none','320']" data-height="none" data-whitespace="nowrap"
-                            data-type="text" data-responsive_offset="on"
-                            data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":2550,"ease":"Power3.easeOut"},{"delay":"wait","speed":1000,"to":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 8; white-space: nowrap; font-family: 'Roboto Condensed', sans-serif;">
-                            A Perspective of care
-                        </div>
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper bg-primary rs-parallaxlevel-3"
-                            id="slide-300-layer-5" data-x="['center','center','center','center']"
-                            data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['200','137','210','180']" data-width="5" data-height="100"
-                            data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-responsive="off"
-                            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2900,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                            data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            style="z-index: 9; border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                        </div>
-
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-            </div>
-        </div><!-- END REVOLUTION SLIDER -->
-    </div>
     <!-- Slider END -->
     <div class="content-block">
+        <div class="section-full content-inner bg-white">
+            <div class="container">
+                <div class="section-head text-black text-center">
+                    <h2 class="title">OUR SERVICES</h2>
+                    <p>Badr-Al-Sabah offers a full suite of facility management services to its corporate clients in
+                        UAE.</p>
+                </div>
+                <div class="row">
+                    {% for object in services %}
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 m-b50 wow fadeInLeft" data-wow-duration="2s"
+                        data-wow-delay="0.3s"
+                        style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                        <div class="dlab-box service-box-3">
+                            <div class="dlab-media radius-sm dlab-img-overlay1 zoom dlab-img-effect">
+                                <a href="{% url 'service-detail-page' slug=object.slug %}">
+                                    <img src="{{ object.image.url }}" alt=""></a>
+                            </div>
+                            <div class="dlab-info">
+                                <h4 class="title">
+                                    <a href="{% url 'service-detail-page' slug=object.slug %}">{{ object.title }}</a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
         <!-- contact area -->
         <div class="section-full call-action bg-primary wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s"
             style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeIn;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 text-white">
-                        <h2 class="title">Buraq Al Madeena Facility Management Services </h2>
+                        <h2 class="title">Badr-Al-Sabah Facility Management Services </h2>
                         <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="col-lg-3 d-flex">
@@ -230,83 +58,56 @@
                 </div>
             </div>
         </div>
-        <!-- Features -->
-        <div class="section-full content-inner bg-gray">
+        <!-- Services -->
+        <div class="section-full content-inner-2 bg-gray wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s"
+            style="background-image:url(/static/blf/images/overlay/brilliant.png);">
             <div class="container">
                 <div class="section-head text-black text-center">
-                    <h2 class="title">Facility Management Services</h2>
-                    <p>BSM offers a full suite of facility management services to its corporate clients in UAE</p>
+                    <h2 class="title">Badr-Al-Sabah</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's
+                        standard dummy text ever since the been when an unknown printer.</p>
                 </div>
                 <div class="row">
-                    {% for object in services %}
-                    <div class="col-lg-4 col-md-6 col-sm-6 m-b30 wow fadeInUp" data-wow-duration="2s"
-                        data-wow-delay="0.3s">
-
-                        <div class="dlab-box service-box-2">
-                            <div class="dlab-media radius-sm dlab-img-overlay1 dlab-img-effect rotate">
-                                <a href="{% url 'service-detail-page' slug=object.slug %}">
-                                    <img src="{{ object.image.url }}" alt=""></a>
-                            </div>
-                            <div class="dlab-info">
-                                <h4 class="title">
-                                    <a href="{% url 'service-detail-page' slug=object.slug %}">
-                                        {{ object.title }}</a>
-                                </h4>
-                                <p>{{ object.timeline|truncatechars:110 }}</p>
-                                <a href="{% url 'service-detail-page' slug=object.slug %}"
-                                    class="site-button btnhover14">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        <!-- Features End -->
-        <!-- Service Info Head -->
-        <div class="section-full">
-            <div class="row m-lr0">
-                <div class="col-xl-6 col-lg-12 p-lr0 d-flex dis-tbl latest-project-info bg-primary wow fadeInLeft"
-                    data-wow-duration="2s" data-wow-delay="0.3s"
-                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                    <div class="text-white align-self-center">
-                        <h2>Our Latest Service for Facility Management</h2>
-                        <p>Praesent pharetra orci odio, ut mattis tellus ullamcorper ornare. Suspendisse ullamcorper
-                            <span class="text-white">metus in erat viverra</span>, vehicula pharetra dolor accumsan. In
-                            arcu ex,
-                            rutrum finibus malesuada vel. Praesent pharetra orci odio, ut mattis tellus ullamcorper
-                            ornare.
-                            Suspendisse ullamcorper <span class="text-white">metus in erat viverra</span>, vehicula
-                            pharetra
-                            dolor accumsan. In arcu ex, rutrum finibus malesuada vel.
-                        </p>
-                        <a href="{% url 'contact-page' %}" class="site-button btnhover15 white">Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-12 p-lr0 wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.3s"
-                    style="visibility: visible; animation-duration: 2s; animation-delay: 0.3s; animation-name: fadeInRight;">
-                    <div class="row m-a0 lightgallery">
-                        <div class="col-lg-12 col-md-12 col-sm-12 p-lr0">
-                            <div class="dlab-box overlay-gallery-bx1">
-                                <div class="dlab-thum dlab-img-overlay1 primary">
-                                    <a href="javascript:void(0);"> <img class="img-cover"
-                                            src="{% static 'blf/images/about/pic4.jpg' %}" alt=""> </a>
+                    <div class="col-lg-12">
+                        <div class="img-carousel-dots owl-theme owl-dots-none owl-carousel owl-btn-center-lr owl-btn-3">
+                            <div class="item">
+                                <div class="service-box style4">
+                                    <div class="icon-lg m-b5 text-primary radius">
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="flaticon-worker"></i></a>
+                                    </div>
+                                    <h3 class="title">Solar Panels</h3>
+                                    <div class="no">1</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
-                            <div class="dlab-box overlay-gallery-bx1">
-                                <div class="dlab-thum dlab-img-overlay1 primary">
-                                    <a href="javascript:void(0);"> <img class="img-cover"
-                                            src="{% static 'blf/images/about/pic2.jpg' %}" alt=""> </a>
+                            <div class="item">
+                                <div class="service-box style4">
+                                    <div class="icon-lg m-b5 text-primary radius">
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="flaticon-factory"></i></a>
+                                    </div>
+                                    <h3 class="title">Wind Turbines</h3>
+                                    <div class="no">2</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 p-lr0">
-                            <div class="dlab-box overlay-gallery-bx1">
-                                <div class="dlab-thum dlab-img-overlay1 primary">
-                                    <a href="javascript:void(0);"> <img class="img-cover"
-                                            src="{% static 'blf/images/about/pic1.jpg' %}" alt=""> </a>
+                            <div class="item">
+                                <div class="service-box style4">
+                                    <div class="icon-lg m-b5 text-primary radius">
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="flaticon-settings"></i></a>
+                                    </div>
+                                    <h3 class="title">Maintenance</h3>
+                                    <div class="no">3</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="service-box style4">
+                                    <div class="icon-lg m-b5 text-primary radius">
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="flaticon-engineer-1"></i></a>
+                                    </div>
+                                    <h3 class="title">Monitoring</h3>
+                                    <div class="no">4</div>
                                 </div>
                             </div>
                         </div>
@@ -314,6 +115,7 @@
                 </div>
             </div>
         </div>
+        <!-- Services End -->
         <!-- Service Info Head End -->
         <!-- About Us -->
         <div class="section-full content-inner const-about">
@@ -341,8 +143,6 @@
                                     metus in erat viverra, vehicula pharetra dolor accumsan. In arcu ex, rutrum finibus
                                     malesuada vel. Praesent pharetra orci odio, ut mattis tellus</p>
                             </div>
-                            <a href="portfolio-details.html" class="site-button btnhover15 m-r10 m-b10">View
-                                Portfolio</a>
                             <a href="{% url 'about-page' %}" class="site-button btnhover15 black m-b10">About Us</a>
                         </div>
                     </div>
@@ -366,45 +166,52 @@
         </div>
         <!-- call section-full end -->
         <!-- Testimonials -->
-        <div class="section-full bg-gray content-inner">
+        <div class="section-full content-inner bg-gray">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="sort-title clearfix text-center">
-                            <h4>What peolpe are saying</h4>
+                <div class="section-head text-center">
+                    <h2 class="title">What peolpe are saying</h2>
+                </div>
+                <div
+                    class="testimonial-six owl-carousel owl-btn-center-lr testimonial-13-area owl-btn-2 primary dots-style-3 owl-theme">
+                    <div class="item wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.3s">
+                        <div class="testimonial-13">
+                            <div class="testimonial-text">
+                                <div class="quote-left"></div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a
+                                    galley.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <h5 class="testimonial-name m-t10 m-b5">David Matin</h5>
+                                <span class="testimonial-position text-primary">Student</span>
+                            </div>
                         </div>
-                        <div class="section-content">
-                            <div class="testimonial-five owl-none owl-loaded owl-theme owl-carousel">
-                                <div class="item">
-                                    <div class="testimonial-6">
-                                        <div class="testimonial-text bg-white quote-left quote-right">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem
-                                                Ipsum has been the industry's standard dummy text ever since the when an
-                                                printer
-                                                took a galley of type and scrambled it to make [...]</p>
-                                        </div>
-                                        <div class="testimonial-detail clearfix bg-primary text-white">
-                                            <h4 class="testimonial-name m-tb0">David Matin</h4>
-                                            <span class="testimonial-position">Student</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="testimonial-6">
-                                        <div class="testimonial-text bg-white quote-left quote-right">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem
-                                                Ipsum has been the industry's standard dummy text ever since the when an
-                                                printer
-                                                took a galley of type and scrambled it to make [...]</p>
-                                        </div>
-                                        <div class="testimonial-detail clearfix bg-primary text-white">
-                                            <h4 class="testimonial-name m-tb0">David Matin</h4>
-                                            <span class="testimonial-position">Student</span>
-                                        </div>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="item wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                        <div class="testimonial-13">
+                            <div class="testimonial-text">
+                                <div class="quote-left"></div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a
+                                    galley.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <h5 class="testimonial-name m-t10 m-b5">David Matin</h5>
+                                <span class="testimonial-position text-primary">Student</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.9s">
+                        <div class="testimonial-13">
+                            <div class="testimonial-text">
+                                <div class="quote-left"></div>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                                    printer took a
+                                    galley.</p>
+                            </div>
+                            <div class="testimonial-detail clearfix">
+                                <h5 class="testimonial-name m-t10 m-b5">David Matin</h5>
+                                <span class="testimonial-position text-primary">Student</span>
                             </div>
                         </div>
                     </div>

@@ -1,46 +1,24 @@
 {% load static %}
 {% load active_link_tags %}
-<!-- header -->
-<header class="site-header mo-left header header-curve ext-header dark " style="height: 166.761px;">
-    <div class="middle-bar bg-dark">
-        <div class="container-fluid">
-            <!-- website logo  -->
-            <div class="middle-area">
-                <div class="logo-header">
-                    <img src="{% static 'bmf/images/Logo.png' %}" width="auto" height="auto" alt=""
-                        style="width: 35% !important;"></a>
-                </div>
-                <div class="service-list">
-                    <ul>
-                        <li>
-                            <i class="la la-phone"></i>
-                            <h4 class="title">(+00)888.666.88</h4>
-                            <span>Free Call</span>
-                        </li>
-                        <li>
-                            <i class="la la-clock-o"></i>
-                            <h4 class="title">08:00 AM - 06:00 PM</h4>
-                            <span>Monday - Friday</span>
-                        </li>
-                        <li>
-                            <i class="la la-map"></i>
-                            <h4 class="title">183 Donato Parkways</h4>
-                            <span>CA, United State</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<style>
+    .header-nav .nav .active a {
+        color: #0086f0 !important;
+    }
 
-        </div>
-    </div>
+    .header-nav .nav>li:hover>a {
+        color: #0086f0 !important;
+    }
+</style>
+<!-- header -->
+<header class="site-header mo-left header navstyle1">
     <!-- main header -->
-    <div class="sticky-header main-bar-wraper navbar-expand-lg">
-        <div class="main-bar clearfix ">
-            <div class="container-fluid clearfix">
+    <div class="sticky-header main-bar-wraper header-curve navbar-expand-lg">
+        <div class="main-bar clearfix bg-primary">
+            <div class="container clearfix">
                 <!-- website logo -->
-                <div class="logo-header mostion">
-                    <img src="{% static 'bmf/images/Logo.png' %}" width="auto" height="auto" alt=""
-                        style="width: 32% !important;"></a>
+                <div class="logo-header mostion logo-dark">
+                    <img src="{% static 'blf/images/Logo.png' %}" width="auto" height="auto" alt=""
+                        style="width: 35% !important;"></a>
                 </div>
                 <!-- nav toggle button -->
                 <button class="navbar-toggler collapsed navicon justify-content-end" type="button"
@@ -53,18 +31,8 @@
                 <!-- extra nav -->
                 <div class="extra-nav">
                     <div class="extra-cell">
-                        <ul class="list-inline">
-                            <li><a href="javascript:void(0);" class="site-button-link facebook hover"><i
-                                        class="fa fa-facebook"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button-link google-plus hover"><i
-                                        class="fa fa-google-plus"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button-link linkedin hover"><i
-                                        class="fa fa-linkedin"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button-link instagram hover"><i
-                                        class="fa fa-instagram"></i></a></li>
-                            <li><a href="javascript:void(0);" class="site-button-link twitter hover"><i
-                                        class="fa fa-twitter"></i></a></li>
-                        </ul>
+                        <button id="quik-search-btn" type="button" class="site-button-link"><i
+                                class="la la-search"></i></button>
                     </div>
                 </div>
                 <!-- Quik search -->
@@ -75,20 +43,18 @@
                     </form>
                 </div>
                 <!-- main nav -->
-                <div class="header-nav navbar-collapse collapse justify-content-start" id="navbarNavDropdown">
+                <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                     <div class="logo-header d-md-block d-lg-none">
-                        <img src="{% static 'bmf/images/Logo.png' %}" width="auto" height="auto" alt=""
-                            style="width: 32% !important;"></a>
+                        <img src="{% static 'blf/images/Logo.png' %}" width="auto" height="auto" alt=""
+                            style="width: 35% !important;"></a>
                     </div>
                     <ul class="nav navbar-nav">
-                        <li class="{% active_link 'home-page' strict=True %}">
+                        <li class="{% active_link 'home-page' strict=True %} homedemo">
                             <a href="{% url 'home-page' %}">Home</a>
                         </li>
                         <li class="{% active_link 'services-page' %}">
                             <a href="{% url 'services-page' %}">Service</a>
                         </li>
-                        <li><a href="https://buraqalmadeenasecurity.com/" rel="noreferrer" target="_blank">Security
-                                Services</a></li>
                         <li class="{% active_link 'core-page' %}">
                             <a href="{% url 'core-page' %}">Mission</a>
                         </li>
@@ -101,10 +67,14 @@
                     </ul>
                     <div class="dlab-social-icon">
                         <ul>
-                            <li><a class="site-button sharp-sm fa fa-facebook" href="javascript:void(0);"></a></li>
-                            <li><a class="site-button sharp-sm fa fa-twitter" href="javascript:void(0);"></a></li>
-                            <li><a class="site-button sharp-sm fa fa-linkedin" href="javascript:void(0);"></a></li>
-                            <li><a class="site-button sharp-sm fa fa-instagram" href="javascript:void(0);"></a></li>
+                            <li><a class="site-button facebook sharp-sm fa fa-facebook" href="javascript:void(0);"></a>
+                            </li>
+                            <li><a class="site-button twitter sharp-sm fa fa-twitter" href="javascript:void(0);"></a>
+                            </li>
+                            <li><a class="site-button linkedin sharp-sm fa fa-linkedin" href="javascript:void(0);"></a>
+                            </li>
+                            <li><a class="site-button instagram sharp-sm fa fa-instagram"
+                                    href="javascript:void(0);"></a></li>
                         </ul>
                     </div>
                 </div>
